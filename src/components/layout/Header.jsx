@@ -1,7 +1,22 @@
-function Header() {
+import { Logo, Button } from "../ui";
+import { Navbar } from "../common";
+
+function Header({ isLogged = false }) {
   return (
     <header className="header">
-      <h2>Header</h2>
+      <Logo />
+
+      <Navbar />
+
+      <div className="actions">
+        {isLogged && <Button>Réserver</Button>}
+
+        {!isLogged && (
+          <Button isLink={true} path={"/login"}>
+            Se connecter
+          </Button>
+        )}
+      </div>
     </header>
   );
 }

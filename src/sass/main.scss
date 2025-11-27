@@ -4,8 +4,11 @@
 @use "./base/typography";
 
 // Components
+@use "./components/logo";
+@use "./components/button";
 
 // Layout
+@use "./layout/header";
 
 // Pages
 

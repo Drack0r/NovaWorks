@@ -1,0 +1,14 @@
+/* ====================
+  Button
+==================== */
+@use "../utils/variables" as *;
+
+.button {
+  padding: 14px 30px;
+  font-weight: 600;
+  color: $pure-white;
+  background: $light-black;
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
+}

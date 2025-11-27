@@ -78,3 +78,10 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* 11. Remove list styles */
+menu,
+ul,
+li {
+  list-style: none;
+}

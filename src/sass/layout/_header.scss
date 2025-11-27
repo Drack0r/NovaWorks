@@ -1,0 +1,44 @@
+/* ====================
+  Header
+==================== */
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.header {
+  @include flex-align-center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 5.5%;
+  background: $gray;
+
+  // border: 1px dashed black;
+}
+
+.header > * {
+  // border: 1px dashed black;
+}
+
+.header .nav {
+  margin-top: 5px;
+}
+
+.header .nav-list {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.header .nav a {
+  font-family: inherit;
+  font-weight: 600;
+  color: $light-black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .actions a {
+  font-family: inherit;
+  font-weight: 600;
+  color: $pure-white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
